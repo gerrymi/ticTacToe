@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tic Tac Toe!</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 id="turn" class="X">It's player <i id="turn-symbol" class="fa fa-times" aria-hidden="true"></i>'s turn!</h1>
+		<ul id="board">	
+		  <li class="block b0" onclick="play(0)">
+		  	<img src="http://placehold.it/1x1" alt="">
+		  	<span>
+				<i class="fa fa-minus-square" aria-hidden="true"></i>
+		  	</span>
+		  </li>
+		  <li class="block b1" onclick="play(1)">
+		  	<img src="http://placehold.it/1x1" alt="">
+		  	<span>
+				<i class="fa fa-minus-square" aria-hidden="true"></i>
+		  	</span>
+		  </li>
+		  <li class="block b2" onclick="play(2)">
+		  	<img src="http://placehold.it/1x1" alt="">
+		  	<span>
+				<i class="fa fa-minus-square" aria-hidden="true"></i>
+		  	</span>
+		  </li>
+		  <li class="block b3" onclick="play(3)">
+		  	<img src="http://placehold.it/1x1" alt="">
+		  	<span>
+				<i class="fa fa-minus-square" aria-hidden="true"></i>
+		  	</span>
+		  </li>
+		  <li class="block b4" onclick="play(4)">
+		  	<img src="http://placehold.it/1x1" alt="">
+		  	<span>
+				<i class="fa fa-minus-square" aria-hidden="true"></i>
+		  	</span>
+		  </li>
+		  <li class="block b5" onclick="play(5)">
+		  	<img src="http://placehold.it/1x1" alt="">
+		  	<span>
+				<i class="fa fa-minus-square" aria-hidden="true"></i>
+		  	</span>
+		  </li>
+		  <li class="block b6" onclick="play(6)">
+		  	<img src="http://placehold.it/1x1" alt="">
+		  	<span>
+				<i class="fa fa-minus-square" aria-hidden="true"></i>
+		  	</span>
+		  </li>
+		  <li class="block b7" onclick="play(7)">
+		  	<img src="http://placehold.it/1x1" alt="">
+		  	<span>
+				<i class="fa fa-minus-square" aria-hidden="true"></i>
+		  	</span>
+		  </li>
+		  <li class="block b8" onclick="play(8)">
+		  	<img src="http://placehold.it/1x1" alt="">
+		  	<span>
+				<i class="fa fa-minus-square" aria-hidden="true"></i>
+		  	</span>
+		  </li>
+		  <li id="X" class="block score X">0</li>
+		  <li id="draw" class="block score">0</li>
+		  <li id="O" class="block score O">0</li>
+		</ul>
+	</div>
+	<div id="alert" class="alert-off" onclick="reset()">
+		  	<div class="alert-inner">
+		  		<i id="winner" class="fa fa-minus-square" aria-hidden="true"></i>
+		  		<p id="alert-text">DRAW!</p>
+		  	</div>
+	</div>
+	<script type="text/javascript" src="ticTacToe_reFactored.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

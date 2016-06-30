@@ -1,0 +1,102 @@
+body {
+	background-color: #464d5a;
+	font-family: 'Roboto';
+	color: #fff;
+}
+.container {
+	text-align: center;
+	margin-top: 20px;
+}
+#board {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: baseline;
+	align-content: center;
+	width: 320px;
+	margin: 0 auto;
+	padding: 0px;
+}
+#board li {
+	list-style-type: none;
+}
+.block {
+	flex-grow: 1;
+	width: 33.33%;
+	height: auto;
+	text-align: center;
+	position: relative;
+	font-size: 5em;
+}
+.block img {
+	width: 100%;
+	opacity: 0;
+}
+.block span {
+	display: block;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.block.score {
+	margin-top: 5vh;
+	font-size: 2em;
+}
+#alert {
+	background-color: rgba(0,0,0,0.7);
+	text-align: center;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.alert-on {
+	opacity: 1;
+	-webkit-transition: ease 0.8s;
+	-o-transition: ease 0.8s;
+	transition: ease 0.8s;
+}
+.alert-fade {
+	opacity: 0;
+}
+.alert-off {
+	display: none;
+}
+#winner {
+	font-size: 16em;
+}
+#alert-text {
+	margin-top: 0px;
+	font-size: 3em;
+}
+.alert-inner {
+	overflow: hidden;
+	top: 20vh;
+	position: relative;
+}
+/* Icons */
+.fa {
+	vertical-align: middle;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+.block .fa-minus-square {
+	opacity: 0.4;
+}
+.block:hover .fa-minus-square {
+	opacity: 1;
+}
+.fa-circle-o, .fa-times {
+	
+	font-size: 1.3em;
+}
+.X {
+	color: #EF4952;
+}
+.O {
+	color: #FFD34E;
+}
