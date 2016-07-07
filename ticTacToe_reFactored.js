@@ -46,7 +46,7 @@ function play(move) {
 			document.getElementById('turn').className = currentPlayer().symbol
 			document.getElementById('turn-symbol').className = 'fa ' + currentPlayer().fa
 		} else {
-			renderResults(draw)
+			renderResults(draw, 'DRAW!')
 		}
 
 	} else {
@@ -66,9 +66,10 @@ function play(move) {
 		}
 	}
 	
-	function renderResults(result) {
+	function renderResults(result, resText) {
+		var resText = resText || 'WINS!'
 		document.getElementById('winner').className = result.symbol + ' fa ' + result.fa
-		document.getElementById('alert-text').innerHTML = 'WINS!'
+		document.getElementById('alert-text').innerHTML = resText
 		document.getElementById('alert').className = 'alert-on'
 		result.score++
 		document.getElementById(result.symbol).innerHTML = result.score
